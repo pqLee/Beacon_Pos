@@ -43,16 +43,21 @@
 ![Image text](https://github.com/PengqiangLi/Beacon_Pos/blob/master/images/%E7%9B%B8%E4%BA%A4%E4%BA%8E%E4%B8%80%E7%89%87%E5%8C%BA%E5%9F%9F.png)
 
 这里，我们的算法采用最小二乘法求近似解，并针对n个基站（n≥3），已知n个基站的坐标分别为 ()，()，…，() ，未知终端坐标为() ，由以下步骤求解：
+
 ①：建立信标节点与未知节点距离方程组
+
 ![Image text](https://github.com/PengqiangLi/Beacon_Pos/blob/master/images/%E4%BF%A1%E6%A0%87%E8%8A%82%E7%82%B9%E4%B8%8E%E6%9C%AA%E7%9F%A5%E8%8A%82%E7%82%B9%E8%B7%9D%E7%A6%BB%E6%96%B9%E7%A8%8B%E7%BB%84.png)
 
 ②：上边方程组为非线性方程组，用方程组中前n-1个方程减去第n个方程后，得到线性化的方程：
+
 ![Image text](https://github.com/PengqiangLi/Beacon_Pos/blob/master/images/%E5%BE%97%E5%88%B0%E7%9A%84%E7%BA%BF%E6%80%A7%E5%8C%96%E6%96%B9%E7%A8%8B.png)
 
 其中：
+
 ![Image text](https://github.com/PengqiangLi/Beacon_Pos/blob/master/images/A%E3%80%81b%E7%9F%A9%E9%98%B5.png)
 
 ③：用最小二乘法求解上边方程得：
+
 ![Image text](https://github.com/PengqiangLi/Beacon_Pos/blob/master/images/%E7%BB%93%E6%9E%9C.png)
 
 X 便是未知终端的坐标计算值。
